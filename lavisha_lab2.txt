@@ -1,0 +1,35 @@
+commands used :
+
+1.who-prints the information about the users who are currently logged in.
+e.g.-a--all
+    -b--boot
+
+2.ls-lists the information about the files.
+e.g.-b--escape
+    -B--ignore backups
+
+3.cal-prints all the informations regarding the calander.
+e.g.-h--turn off highlights of today
+    -e--display the date of easter
+
+4.bc-it is a language the supports arbitrary recursion numbers with interactive execution of the statements.
+e.g.-i--interactive
+    -l--mathlab
+
+5.date-displays informations about the current and selected dates.
+e.g.-f--file
+    -s--set
+
+6.time-prints the details regarding the time.
+e.g.-a--append
+    -f--format
+
+7.uname-it prints some system informations.
+e.g.-s--kernel_name
+    -v--kernel_version
+
+->these commands are given after the special character. e.g. $.
+->these commands have various sub commands which performs their specified tasks.
+->to view these commands we use :man <command type>.,which displays the list of sub commands    
+ available in that particular command.
+ 
