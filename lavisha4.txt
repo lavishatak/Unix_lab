@@ -1,0 +1,59 @@
+EXCERCISE PROBLEMS:
+
+step1: create a shell file for each of the operations to be performed as specified.
+
+stp2: use sh file_name.sh,to view the output.
+
+1. write a shell skript to check whether an entered number is positive or negative?
+ PROGRAM:
+ echo "enter the value of n"
+ read n
+ if test $n -gt 0
+ then 
+     echo "the number is positive"
+ else 
+     echo "the number is negative"
+ fi
+
+2. write a shell script to print the grade of the students based on their marks obtained?
+ PROGRAM:
+ echo "enter the marks obtained by the student"
+ read m
+ if test $m -ge 90
+ then 
+	echo "the grade of the student is A"
+ elif test $m -ge 80
+ then 
+	echo "the grade of the student is B"
+elif test $m -ge 70
+ then 
+	echo "the grade of the student is C"
+elif test $m -ge 60
+ then 
+	echo "the grade of the student is D"
+else 
+	echo "sorry! the student has failed"
+ fi
+
+3. write a shell script to check whether the entered number is prime or not?
+PROGRAM:
+ count =0
+ echo "enter a number"
+ read n
+ i=1
+ for i in $( seq 1 $n )
+ do
+ 	if [ `expr $n % $i` -eq 0 ]
+     then
+	count=$(($count+1))
+ fi
+ i=$(($i+1))
+ done
+ if test $count -eq 2
+ then 
+	echo "the number is prime"
+ else
+	echo "the number is not prime"
+ fi
+
+
