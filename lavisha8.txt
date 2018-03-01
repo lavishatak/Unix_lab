@@ -1,7 +1,9 @@
 EXCERCISE PROBLEMS:
 
 1.TO PERFORM STRING TEST?
-->str1="lavisha"
+->int n
+  echo "enter the value of n"
+str1="lavisha"
   if [ -n str1 ]
   then
 	echo "the desired string exists"
