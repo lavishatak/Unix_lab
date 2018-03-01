@@ -1,8 +1,0 @@
-SHELL SCRIPT TO PERFORM ARITHMETIC OPERATION:
-
-echo "1 add,2 subtract,3 multiply,4 divide,5 modulus,6 increment by one,7 decrement by one"
-read choice
-echo "enter the values of a and b"
-read a;b
-case $choice in
-	
