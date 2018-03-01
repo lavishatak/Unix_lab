@@ -1,0 +1,26 @@
+EXCERCISE PROBLEMS:
+
+1. display the third column of the CSEA1.csv file without printing the header "CGPA" and also sort the same?
+->the above operations are performed using the following commands:
+A. $cut -d, -f 3 CSEA1.csv-used to extract the CGPA column.
+B. $sort -t, -nk3 CSEA1.csv-used to sort the table based on the CGPA column.
+
+2.display only the current date and time using the date command?
+-> the command used to perform this operation is:
+  $date +%c.
+
+3.use unique with all possible operations?
+->performed bt the command:
+  $uniq.
+
+4.display and sort USN from the CSEA1.csv file?
+->the above operation is performed using the following command:
+ $sort -t, -dk1 CSEA1.csv.
+
+5.replace field NAME with STUDENT_NAME in CSEA1.csv file?
+->the above operation is performed using the following command:
+  $tr "NAME" "STUDENT_NAME" < CSEA1.csv.
+
+6.sort only the name field using opetion?
+->the above operation is performed using the following command:
+  $sort -t, -dk2 CSEA1.csv

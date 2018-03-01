@@ -1,0 +1,55 @@
+EXCERCISE PROBLEMS:
+
+1.TO PERFORM STRING TEST?
+->str1="lavisha"
+  if [ -n str1 ]
+  then
+	echo "the desired string exists"
+  fi.
+
+2.file related commands?
+->the following commands are:
+ a)cp-used to copy contents of one file to another.
+ b)rm-used to remove file from the existing directory.
+ c)rmdir-to remove the existig directory.
+ d)mv-used to renmae a file within the directory.
+   e.g-$mv -T source destinition
+ e)cmp-used to compare the contents of two files inside the directory.
+   e.g-$cmp file1 file2
+ f)diff-used to find the difference in the contents of two files existing within the directory.
+  e.g-$diff file1 file2
+ g)comm-used to find the common contents between the two files within the directory.
+  e.g-$comm file1 file2
+ 
+3.setting permission to the file or directory?
+->initially create a sample file within a directory,then perform the following:
+  $chmod u+x sample
+  $ls -l sample
+
+4.write a shell script to prefix all the files within the directory with the current date in "dd/mm/yy" format?
+->perform the following operation:
+ for f in * ;
+ do 
+    mv "$f" "01 mar 2018$f";
+ done
+
+5.use of commands find anjd xargs?
+->the find command is used to find the file within a directory 
+ e.g-to list out the files of c and c++
+     $find //home/cse -name *.c -a -name.cpp -print.
+
+similarly:
+the xargs command is used to build and execute commmands from standard inputs.
+e.g-1. $xargs -d\n
+    <enter the required text inputs>
+    2. $echo abcdef |xargs -n 3
+     this gives the output as follows:
+                 abc 
+		 def.
+
+6.what is the use of umask command?
+->the umask command is used to set new default permission for the files.
+  e.g-$umask 042 filename.
+
+the umask command performs as the standard permission minus the new permission.
+if the directroy has to be granted the new default permission then the new permission is subtracted from 777,where as if the file has to be granted the new default permission then the new permission is subtracted from 666.
