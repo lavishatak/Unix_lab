@@ -1,0 +1,12 @@
+EXCERCISE PROGRAMS ON SED COMMAND:
+
+1.Display the employee details who's designation manager/Manager?
+->sed -i "empl[manager/Manager]/p" empl.
+
+2.salary which starts with 2?
+->sed -d -f 5 "^2" empl.
+
+3.from line 1 to 5 if any designation is manager replace it with director?
+->sed -e 'manager/director/g' empl.
+
+ 
