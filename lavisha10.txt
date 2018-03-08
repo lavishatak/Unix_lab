@@ -9,4 +9,8 @@ EXCERCISE PROGRAMS ON SED COMMAND:
 3.from line 1 to 5 if any designation is manager replace it with director?
 ->sed -e 'manager/director/g' empl.
 
+4.design a search engine to search for a word or a phrase in all or any file on your computer?
+->echo "enter the pattern to be searched"
+  read n
+  grep -r1 "$n" "/home"
  
