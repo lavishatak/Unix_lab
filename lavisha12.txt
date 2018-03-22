@@ -1,0 +1,20 @@
+EXCERCISE ON AWK COMMAND:
+
+1.write a awk command to delete all the blank lines from the file?
+->awk -d " " unix.lst.
+
+2.wirte a awk command to print the odd numbered lines of the file?
+->awk -F "|" 'NR%2!=0{print}' unix.lst.
+
+3.awk command to print the last field without knowing the number of fields in a line?
+->awk -F "|" '{print $nf}' unix.lst.
+
+4.write the equivalent awk commands for the following:
+	a.head -n 5 filename.
+	->awk -F "|" 'NR=1,NR=5' unix.lst.
+	 
+	b.sed -n '5,10p' filename.
+	->awk -F "|" 'NR==5,NR==10{print}' unix.lst.
+         
+	c.tail +3 filename.
+	->awk -F "|" 'NR=3,NR=5' unix.lst.
