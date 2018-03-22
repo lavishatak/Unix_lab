@@ -1,7 +1,7 @@
 EXCERCISE ON AWK COMMAND:
 
 1.write a awk command to delete all the blank lines from the file?
-->awk -d " " unix.lst.
+->awk '/^\s"$/d' unix.lst.
 
 2.wirte a awk command to print the odd numbered lines of the file?
 ->awk -F "|" 'NR%2!=0{print}' unix.lst.
