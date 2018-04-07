@@ -1,0 +1,51 @@
+DATABASE RELATED FUNCTIONS USING SHELL SCRIPTING:
+
+i="y"
+echo "enter the name of the database"
+read db
+while [ $i = "y" ]
+do
+        echo "1. view the database"
+        echo "2. view the specific record"
+        echo "3. add record"
+        echo "4. delete record"
+        echo "5. exit"
+        echo "enter your choice"
+        read ch
+        case $ch in
+                1) cat $db;;
+                2)echo "enter id"
+                  read id
+                      grep -i "$id" $db;;
+                3) echo "enter the new id"
+                   read nid
+                   echo "enter the student's name"
+                   read nname
+                   echo "enter college name"
+                   read ncname
+		    echo $nid $nname$ncname >> $db;;
+                4) echo "enter the id"
+                   read id
+                   grep -v "$id" $db > db2
+                   echo "record is deleted"
+                   cat db2;;
+                5) exit;;
+                *) echo "invalid choice";;
+        esac
+echo "do you want to continue ?"
+read i
+if [ $i != "y" ]
+then
+        exit
+fi
+done
+
+CODE TO VIEW THE LOGGED IN DETAILS OF THE USER:
+
+num=$(who -q )
+details=$( who -H )
+echo "the total number of users logged in: $num"
+echo "the details of the logged-in users :\n$details"
+
+ 
+
