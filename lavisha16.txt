@@ -1,0 +1,9 @@
+EXCERCISE :
+
+MESSAGE BROADCAST:
+
+quotes=("work is worship" "try and try till u succeed" "make hay while shunshines");
+quote=$(quotes[$RANDOM % ${#quotes[@]}]}
+figlet $quote
+echo -e "\n"
+
